@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle : \"EFDC Variables\"\nauthor: \"Dynamic Solutions International, LLC\"\noutput: bookdown::gitbook\ndescription: This document lists the variables used in EFDC model. \n---\n  \n# Preface\n\nThe variable lists used in EFDC model are presented in this book. \n\n# Arrays\n\n# 1-D Arays\nThe following tables displays 1-D arrays in EFDC code. \n\n```{r}\noned <- read_excel(\"data/2017-03-29-arrays-rearranged.xlsx\", sheet = \"1darray\")\nDT::datatable(oned, rownames = F)\n```\n\n# 2-D Arrays\n\n```{r}\ntwod <- read_excel(\"data/2017-03-29-arrays-rearranged.xlsx\", sheet = \"2darray\")\nDT::datatable(twod, rownames = F)\n```\n\n# 3-D Arrays\n```{r}\nthreed <- read_excel(\"data/2017-03-29-arrays-rearranged.xlsx\", sheet = \"3darray\")\nDT::datatable(threed, rownames = F)\n```\n\n# 4-D Arrays\n\n```{r}\nfourd <- read_excel(\"data/2017-03-29-arrays-rearranged.xlsx\", sheet = \"4darray\")\nDT::datatable(fourd[,-2], style = 'bootstrap', width = 1200, rownames = F)\n\nknitr::kable(fourd, format=\"html\", pad=0)\n\n```",
+    "created" : 1490822700580.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1322642345",
+    "id" : "C55CAFB6",
+    "lastKnownWriteTime" : 1490825861,
+    "last_content_update" : 1490825861394,
+    "path" : "C:/wamp/www/gitbook/efdc-variables/index.Rmd",
+    "project_path" : "index.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

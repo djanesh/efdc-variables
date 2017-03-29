@@ -1,0 +1,43 @@
+---
+title : "EFDC Variables"
+author: "Dynamic Solutions International, LLC"
+output: bookdown::gitbook
+description: This document lists the variables used in EFDC model. 
+---
+  
+# Preface
+
+The variable lists used in EFDC model are presented in this book. 
+
+# Arrays
+
+# 1-D Arays
+The following tables displays 1-D arrays in EFDC code. 
+
+```{r}
+oned <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "1darray")
+DT::datatable(oned, rownames = F)
+```
+
+# 2-D Arrays
+
+```{r}
+twod <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "2darray")
+DT::datatable(twod, rownames = F)
+```
+
+# 3-D Arrays
+```{r}
+threed <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "3darray")
+DT::datatable(threed, rownames = F)
+```
+
+# 4-D Arrays
+
+```{r}
+fourd <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "4darray")
+DT::datatable(fourd[,-2], style = 'bootstrap', width = 1200, rownames = F)
+
+knitr::kable(fourd, format="html", pad=0)
+
+```
