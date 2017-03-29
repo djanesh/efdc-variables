@@ -2,12 +2,13 @@
 title : "EFDC Variables"
 author: "Dynamic Solutions International, LLC"
 output: bookdown::gitbook
+date: "2017-03-29"
 description: This document lists the variables used in EFDC model. 
 ---
   
 # Preface
 
-The variable lists used in EFDC model are presented in this book. 
+This document is prepared by Dynamic Solutions International, LLC to support the "EFDC Theory knowledge base" hosted on [Confluence](https://dynamicsolutions-intl.atlassian.net/wiki/spaces/ETG). This document is compiled based on the years experience with EFDC model. This document is released in the hope that the EFDC community will find this document as a valuable resource in understanding EFDC model and its variable better. 
 
 ```{r, echo=FALSE, eval=FALSE}
 bookdown::render_book("index.Rmd","bookdown::gitbook", output_dir = "docs")
@@ -15,33 +16,38 @@ bookdown::render_book("index.Rmd","bookdown::gitbook", output_dir = "docs")
 
 # Arrays
 
-# 1-D Arays
+## Combined Arrays
+```{r, echo=FALSE, warning=FALSE}
+array <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "arrays", col_types = NULL)
+DT::datatable(array, rownames = F)
+```
+
+## 1-D Arays
+The arrays above are separated into 1-D arrays in this section. 
 The following tables displays 1-D arrays in EFDC code. 
 
-```{r}
+```{r, echo = FALSE, warning=FALSE}
 oned <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "1darray")
 DT::datatable(oned, rownames = F)
 ```
 
-# 2-D Arrays
+## 2-D Arrays
 
-```{r}
+```{r, echo = FALSE, warning = FALSE}
 twod <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "2darray")
 DT::datatable(twod, rownames = F)
 ```
 
-# 3-D Arrays
-```{r}
+## 3-D Arrays
+```{r, echo = FALSE, warning = FALSE}
 threed <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "3darray")
 DT::datatable(threed, rownames = F)
 ```
 
-# 4-D Arrays
+## 4-D Arrays
 
-```{r}
+```{r, echo = FALSE, warning = FALSE}
 fourd <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "4darray")
 DT::datatable(fourd[,-2], style = 'bootstrap', width = 1200, rownames = F)
-
-knitr::kable(fourd, format="html", pad=0)
-
+#knitr::kable(fourd, format="html", pad=0)
 ```

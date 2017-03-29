@@ -26,6 +26,7 @@
 <meta name="author" content="Dynamic Solutions International, LLC">
 
 
+<meta name="date" content="2017-03-29">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -59,43 +60,6 @@
 <script src="libs/dt-core-bootstrap-1.10.12/js/dataTables.bootstrap.min.js"></script>
 
 
-<style type="text/css">
-div.sourceCode { overflow-x: auto; }
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
-  margin: 0; padding: 0; vertical-align: baseline; border: none; }
-table.sourceCode { width: 100%; line-height: 100%; }
-td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
-td.sourceCode { padding-left: 5px; }
-code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code > span.dt { color: #902000; } /* DataType */
-code > span.dv { color: #40a070; } /* DecVal */
-code > span.bn { color: #40a070; } /* BaseN */
-code > span.fl { color: #40a070; } /* Float */
-code > span.ch { color: #4070a0; } /* Char */
-code > span.st { color: #4070a0; } /* String */
-code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code > span.ot { color: #007020; } /* Other */
-code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code > span.fu { color: #06287e; } /* Function */
-code > span.er { color: #ff0000; font-weight: bold; } /* Error */
-code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-code > span.cn { color: #880000; } /* Constant */
-code > span.sc { color: #4070a0; } /* SpecialChar */
-code > span.vs { color: #4070a0; } /* VerbatimString */
-code > span.ss { color: #bb6688; } /* SpecialString */
-code > span.im { } /* Import */
-code > span.va { color: #19177c; } /* Variable */
-code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code > span.op { color: #666666; } /* Operator */
-code > span.bu { } /* BuiltIn */
-code > span.ex { } /* Extension */
-code > span.pp { color: #bc7a00; } /* Preprocessor */
-code > span.at { color: #7d9029; } /* Attribute */
-code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-</style>
 
 </head>
 
@@ -109,11 +73,13 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a></li>
-<li class="chapter" data-level="2" data-path="arrays.html"><a href="arrays.html"><i class="fa fa-check"></i><b>2</b> Arrays</a></li>
-<li class="chapter" data-level="3" data-path="d-arays.html"><a href="d-arays.html"><i class="fa fa-check"></i><b>3</b> 1-D Arays</a></li>
-<li class="chapter" data-level="4" data-path="d-arrays.html"><a href="d-arrays.html"><i class="fa fa-check"></i><b>4</b> 2-D Arrays</a></li>
-<li class="chapter" data-level="5" data-path="d-arrays-1.html"><a href="d-arrays-1.html"><i class="fa fa-check"></i><b>5</b> 3-D Arrays</a></li>
-<li class="chapter" data-level="6" data-path="d-arrays-2.html"><a href="d-arrays-2.html"><i class="fa fa-check"></i><b>6</b> 4-D Arrays</a></li>
+<li class="chapter" data-level="2" data-path="arrays.html"><a href="arrays.html"><i class="fa fa-check"></i><b>2</b> Arrays</a><ul>
+<li class="chapter" data-level="2.1" data-path="arrays.html"><a href="arrays.html#combined-arrays"><i class="fa fa-check"></i><b>2.1</b> Combined Arrays</a></li>
+<li class="chapter" data-level="2.2" data-path="arrays.html"><a href="arrays.html#d-arays"><i class="fa fa-check"></i><b>2.2</b> 1-D Arays</a></li>
+<li class="chapter" data-level="2.3" data-path="arrays.html"><a href="arrays.html#d-arrays"><i class="fa fa-check"></i><b>2.3</b> 2-D Arrays</a></li>
+<li class="chapter" data-level="2.4" data-path="arrays.html"><a href="arrays.html#d-arrays-1"><i class="fa fa-check"></i><b>2.4</b> 3-D Arrays</a></li>
+<li class="chapter" data-level="2.5" data-path="arrays.html"><a href="arrays.html#d-arrays-2"><i class="fa fa-check"></i><b>2.5</b> 4-D Arrays</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -134,10 +100,11 @@ code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Inf
 <div id="header">
 <h1 class="title">EFDC Variables</h1>
 <h4 class="author"><em>Dynamic Solutions International, LLC</em></h4>
+<h4 class="date"><em>2017-03-29</em></h4>
 </div>
 <div id="preface" class="section level1">
 <h1><span class="header-section-number">1</span> Preface</h1>
-<p>The variable lists used in EFDC model are presented in this book.</p>
+<p>This document is prepared by Dynamic Solutions International, LLC to support the “EFDC Theory knowledge base” hosted on <a href="https://dynamicsolutions-intl.atlassian.net/wiki/spaces/ETG">Confluence</a>. This document is compiled based on the years experience with EFDC model. This document is released in the hope that the EFDC community will find this document as a valuable resource in understanding EFDC model and its variable better.</p>
 </div>
             </section>
 
