@@ -1,2 +1,0 @@
-"0","fourd <- read_excel(""data/2017-03-29-arrays-rearranged.xlsx"", sheet = ""4darray"")"
-"0","DT::datatable(fourd[,-2], style = 'bootstrap', width = 1200, rownames = F)"

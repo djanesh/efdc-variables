@@ -1,0 +1,8 @@
+[
+["index.html", "EFDC Variables 1 Preface", " EFDC Variables Dynamic Solutions International, LLC 1 Preface The variable lists used in EFDC model are presented in this book. "],
+["arrays.html", "2 Arrays", " 2 Arrays "],
+["d-arays.html", "3 1-D Arays", " 3 1-D Arays The following tables displays 1-D arrays in EFDC code. oned &lt;- read_excel(&quot;data/2017-03-29-arrays-rearranged.xlsx&quot;, sheet = &quot;1darray&quot;) DT::datatable(oned, rownames = F) "],
+["d-arrays.html", "4 2-D Arrays", " 4 2-D Arrays twod &lt;- read_excel(&quot;data/2017-03-29-arrays-rearranged.xlsx&quot;, sheet = &quot;2darray&quot;) DT::datatable(twod, rownames = F) "],
+["d-arrays-1.html", "5 3-D Arrays", " 5 3-D Arrays threed &lt;- read_excel(&quot;data/2017-03-29-arrays-rearranged.xlsx&quot;, sheet = &quot;3darray&quot;) DT::datatable(threed, rownames = F) "],
+["d-arrays-2.html", "6 4-D Arrays", " 6 4-D Arrays fourd &lt;- read_excel(&quot;data/2017-03-29-arrays-rearranged.xlsx&quot;, sheet = &quot;4darray&quot;) DT::datatable(fourd[,-2], style = &#39;bootstrap&#39;, width = 1200, rownames = F) knitr::kable(fourd, format=&quot;html&quot;, pad=0) Name Type 1d 2d 3d 4d Description CSER REAL*4 1:NDCSER 1:KCM 1:NCSERM 1:NSTVM INPUT CONCENTRATION TIME SERIES DATA QCTL REAL*4 1:NDQCLT 1:NDQCLT2 1:KCM 1:NQCTTM NA RTXBSDB REAL*4 1:LCM 1:KBM 1:NSTVM 1:NTXM NA TOXPFB REAL*4 1:LCM 1:KBM 1:NSTVM 1:NTXM TOXIC PARTICULATE PHASE FRACTION IN BED TOXPFW REAL*4 1:LCM 1:KCM 1:NSTVM 1:NTXM TOXIC PARTICULATE PHASE FRACTION IN WATER COLUMN TXPFLPF REAL*4 1:LCM 1:KCM 1:NSTVM 1:NTXM LOW PASS FILTER OF TOXIC PARTICULATE FRACTION WQCSER REAL*4 1:NDWQCSR 1:KCM 1:NWQCSRM 1:NWQVM WATER QUALITY MODEL VARIABLE WQPSSER REAL*4 1:NDWQPSR 1:NWQVM 1:NWQPSR M WATER QUALITY MODEL VARIABLE "]
+]

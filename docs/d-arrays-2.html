@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>EFDC Variables</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="This document lists the variables used in EFDC model.">
+  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+
+  <meta property="og:title" content="EFDC Variables" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This document lists the variables used in EFDC model." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="EFDC Variables" />
+  
+  <meta name="twitter:description" content="This document lists the variables used in EFDC model." />
+  
+
+<meta name="author" content="Dynamic Solutions International, LLC">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="d-arrays-1.html">
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<script src="libs/datatables-binding-0.2/datatables.js"></script>
+<link href="libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.12/js/jquery.dataTables.min.js"></script>
+<link href="libs/dt-core-bootstrap-1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<link href="libs/dt-core-bootstrap-1.10.12/css/dataTables.bootstrap.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-bootstrap-1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="libs/dt-core-bootstrap-1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a></li>
+<li class="chapter" data-level="2" data-path="arrays.html"><a href="arrays.html"><i class="fa fa-check"></i><b>2</b> Arrays</a></li>
+<li class="chapter" data-level="3" data-path="d-arays.html"><a href="d-arays.html"><i class="fa fa-check"></i><b>3</b> 1-D Arays</a></li>
+<li class="chapter" data-level="4" data-path="d-arrays.html"><a href="d-arrays.html"><i class="fa fa-check"></i><b>4</b> 2-D Arrays</a></li>
+<li class="chapter" data-level="5" data-path="d-arrays-1.html"><a href="d-arrays-1.html"><i class="fa fa-check"></i><b>5</b> 3-D Arrays</a></li>
+<li class="chapter" data-level="6" data-path="d-arrays-2.html"><a href="d-arrays-2.html"><i class="fa fa-check"></i><b>6</b> 4-D Arrays</a></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EFDC Variables</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="d-arrays-2" class="section level1">
+<h1><span class="header-section-number">6</span> 4-D Arrays</h1>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">fourd &lt;-<span class="st"> </span><span class="kw">read_excel</span>(<span class="st">&quot;data/2017-03-29-arrays-rearranged.xlsx&quot;</span>, <span class="dt">sheet =</span> <span class="st">&quot;4darray&quot;</span>)
+DT::<span class="kw">datatable</span>(fourd[,-<span class="dv">2</span>], <span class="dt">style =</span> <span class="st">&#39;bootstrap&#39;</span>, <span class="dt">width =</span> <span class="dv">1200</span>, <span class="dt">rownames =</span> F)</code></pre></div>
+<div id="htmlwidget-62473059cebf9aa74bbb" style="width:1200px;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-62473059cebf9aa74bbb">{"x":{"style":"bootstrap","filter":"none","data":[["CSER","QCTL","RTXBSDB","TOXPFB","TOXPFW","TXPFLPF","WQCSER","WQPSSER"],["1:NDCSER","1:NDQCLT","1:LCM","1:LCM","1:LCM","1:LCM","1:NDWQCSR","1:NDWQPSR"],["1:KCM","1:NDQCLT2","1:KBM","1:KBM","1:KCM","1:KCM","1:KCM","1:NWQVM"],["1:NCSERM","1:KCM","1:NSTVM","1:NSTVM","1:NSTVM","1:NSTVM","1:NWQCSRM","1:NWQPSR"],["1:NSTVM","1:NQCTTM","1:NTXM","1:NTXM","1:NTXM","1:NTXM","1:NWQVM","M"],["INPUT CONCENTRATION TIME SERIES DATA",null,null,"TOXIC PARTICULATE PHASE FRACTION IN BED","TOXIC PARTICULATE PHASE FRACTION IN WATER COLUMN","LOW PASS FILTER OF TOXIC PARTICULATE FRACTION","WATER QUALITY MODEL VARIABLE","WATER QUALITY MODEL VARIABLE"]],"container":"<table class=\"table table-striped table-hover\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>1d<\/th>\n      <th>2d<\/th>\n      <th>3d<\/th>\n      <th>4d<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="sourceCode"><pre class="sourceCode r"><code class="sourceCode r">knitr::<span class="kw">kable</span>(fourd, <span class="dt">format=</span><span class="st">&quot;html&quot;</span>, <span class="dt">pad=</span><span class="dv">0</span>)</code></pre></div>
+<table>
+<thead>
+<tr>
+<th style="text-align:left;">
+Name
+</th>
+<th style="text-align:left;">
+Type
+</th>
+<th style="text-align:left;">
+1d
+</th>
+<th style="text-align:left;">
+2d
+</th>
+<th style="text-align:left;">
+3d
+</th>
+<th style="text-align:left;">
+4d
+</th>
+<th style="text-align:left;">
+Description
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+CSER
+</td>
+<td style="text-align:left;">
+REAL*4
+</td>
+<td style="text-align:left;">
+1:NDCSER
+</td>
+<td style="text-align:left;">
+1:KCM
+</td>
+<td style="text-align:left;">
+1:NCSERM
+</td>
+<td style="text-align:left;">
+1:NSTVM
+</td>
+<td style="text-align:left;">
+INPUT CONCENTRATION TIME SERIES DATA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+QCTL
+</td>
+<td style="text-align:left;">
+REAL*4
+</td>
+<td style="text-align:left;">
+1:NDQCLT
+</td>
+<td style="text-align:left;">
+1:NDQCLT2
+</td>
+<td style="text-align:left;">
+1:KCM
+</td>
+<td style="text-align:left;">
+1:NQCTTM
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+RTXBSDB
+</td>
+<td style="text-align:left;">
+REAL*4
+</td>
+<td style="text-align:left;">
+1:LCM
+</td>
+<td style="text-align:left;">
+1:KBM
+</td>
+<td style="text-align:left;">
+1:NSTVM
+</td>
+<td style="text-align:left;">
+1:NTXM
+</td>
+<td style="text-align:left;">
+NA
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TOXPFB
+</td>
+<td style="text-align:left;">
+REAL*4
+</td>
+<td style="text-align:left;">
+1:LCM
+</td>
+<td style="text-align:left;">
+1:KBM
+</td>
+<td style="text-align:left;">
+1:NSTVM
+</td>
+<td style="text-align:left;">
+1:NTXM
+</td>
+<td style="text-align:left;">
+TOXIC PARTICULATE PHASE FRACTION IN BED
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TOXPFW
+</td>
+<td style="text-align:left;">
+REAL*4
+</td>
+<td style="text-align:left;">
+1:LCM
+</td>
+<td style="text-align:left;">
+1:KCM
+</td>
+<td style="text-align:left;">
+1:NSTVM
+</td>
+<td style="text-align:left;">
+1:NTXM
+</td>
+<td style="text-align:left;">
+TOXIC PARTICULATE PHASE FRACTION IN WATER COLUMN
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+TXPFLPF
+</td>
+<td style="text-align:left;">
+REAL*4
+</td>
+<td style="text-align:left;">
+1:LCM
+</td>
+<td style="text-align:left;">
+1:KCM
+</td>
+<td style="text-align:left;">
+1:NSTVM
+</td>
+<td style="text-align:left;">
+1:NTXM
+</td>
+<td style="text-align:left;">
+LOW PASS FILTER OF TOXIC PARTICULATE FRACTION
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WQCSER
+</td>
+<td style="text-align:left;">
+REAL*4
+</td>
+<td style="text-align:left;">
+1:NDWQCSR
+</td>
+<td style="text-align:left;">
+1:KCM
+</td>
+<td style="text-align:left;">
+1:NWQCSRM
+</td>
+<td style="text-align:left;">
+1:NWQVM
+</td>
+<td style="text-align:left;">
+WATER QUALITY MODEL VARIABLE
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+WQPSSER
+</td>
+<td style="text-align:left;">
+REAL*4
+</td>
+<td style="text-align:left;">
+1:NDWQPSR
+</td>
+<td style="text-align:left;">
+1:NWQVM
+</td>
+<td style="text-align:left;">
+1:NWQPSR
+</td>
+<td style="text-align:left;">
+M
+</td>
+<td style="text-align:left;">
+WATER QUALITY MODEL VARIABLE
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="d-arrays-1.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

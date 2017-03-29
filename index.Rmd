@@ -9,6 +9,10 @@ description: This document lists the variables used in EFDC model.
 
 The variable lists used in EFDC model are presented in this book. 
 
+```{r, echo=FALSE, eval=FALSE}
+bookdown::render_book("index.Rmd","bookdown::gitbook", output_dir = "docs")
+```
+
 # Arrays
 
 # 1-D Arays
