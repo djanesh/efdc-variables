@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>EFDC Variables</title>
+  <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+  <meta name="description" content="This document lists the variables used in EFDC model.">
+  <meta name="generator" content="bookdown 0.3 and GitBook 2.6.7">
+
+  <meta property="og:title" content="EFDC Variables" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This document lists the variables used in EFDC model." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="EFDC Variables" />
+  
+  <meta name="twitter:description" content="This document lists the variables used in EFDC model." />
+  
+
+<meta name="author" content="Dynamic Solutions International, LLC">
+
+
+<meta name="date" content="2017-03-29">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="efdc-main-arrays.html">
+
+
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+<script src="libs/htmlwidgets-0.8/htmlwidgets.js"></script>
+<script src="libs/datatables-binding-0.2/datatables.js"></script>
+<link href="libs/dt-core-1.10.12/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="libs/dt-core-1.10.12/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-1.10.12/js/jquery.dataTables.min.js"></script>
+<link href="libs/dt-core-bootstrap-1.10.12/css/dataTables.bootstrap.min.css" rel="stylesheet" />
+<link href="libs/dt-core-bootstrap-1.10.12/css/dataTables.bootstrap.extra.css" rel="stylesheet" />
+<script src="libs/dt-core-bootstrap-1.10.12/js/jquery.dataTables.min.js"></script>
+<script src="libs/dt-core-bootstrap-1.10.12/js/dataTables.bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Preface</a></li>
+<li class="chapter" data-level="2" data-path="all-internal-variables.html"><a href="all-internal-variables.html"><i class="fa fa-check"></i><b>2</b> All internal variables</a></li>
+<li class="chapter" data-level="3" data-path="efdc-main-arrays.html"><a href="efdc-main-arrays.html"><i class="fa fa-check"></i><b>3</b> EFDC Main Arrays</a><ul>
+<li class="chapter" data-level="3.1" data-path="efdc-main-arrays.html"><a href="efdc-main-arrays.html#combined-arrays"><i class="fa fa-check"></i><b>3.1</b> Combined Arrays</a></li>
+<li class="chapter" data-level="3.2" data-path="efdc-main-arrays.html"><a href="efdc-main-arrays.html#d-arays"><i class="fa fa-check"></i><b>3.2</b> 1-D Arays</a></li>
+<li class="chapter" data-level="3.3" data-path="efdc-main-arrays.html"><a href="efdc-main-arrays.html#d-arrays"><i class="fa fa-check"></i><b>3.3</b> 2-D Arrays</a></li>
+<li class="chapter" data-level="3.4" data-path="efdc-main-arrays.html"><a href="efdc-main-arrays.html#d-arrays-1"><i class="fa fa-check"></i><b>3.4</b> 3-D Arrays</a></li>
+<li class="chapter" data-level="3.5" data-path="efdc-main-arrays.html"><a href="efdc-main-arrays.html#d-arrays-2"><i class="fa fa-check"></i><b>3.5</b> 4-D Arrays</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="sedtox.html"><a href="sedtox.html"><i class="fa fa-check"></i><b>4</b> SEdTOX</a><ul>
+<li class="chapter" data-level="4.1" data-path="sedtox.html"><a href="sedtox.html#arrays-in-sedtox"><i class="fa fa-check"></i><b>4.1</b> Arrays in SEDTOX</a></li>
+<li class="chapter" data-level="4.2" data-path="sedtox.html"><a href="sedtox.html#sedtox-local-variables"><i class="fa fa-check"></i><b>4.2</b> SEDTOX Local Variables</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">EFDC Variables</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sedtox" class="section level1">
+<h1><span class="header-section-number">4</span> SEdTOX</h1>
+<div id="arrays-in-sedtox" class="section level2">
+<h2><span class="header-section-number">4.1</span> Arrays in SEDTOX</h2>
+<div id="htmlwidget-75caa4dc7b20615ecab8" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-75caa4dc7b20615ecab8">{"x":{"filter":"none","data":[["ACOEF","ALOW","BMNN","CDECAYB","CDECAYW","COEFK","COEFSK","CSHIELDS50","CUPP","CTMPDRY","DSTRSE","DZBTR","DZBTR1","GAMTMP","HYDCN","NSP2","PEXP","PHID","PRESE","PRESH","PREST","QCOEF","QSBDTOP","QSBDLDP","QWBDTOP","RBPSBL","RRHS","SEDBALL","SEDDIA50","SEDBS","SEDS","SGSM1","SNDBS","SNDFBL","SNDS","STRESSS","STRSE","STRSEM","STRST","TOXBS","TOXS","TOXTMP","WSETA","ZETATOP","ZBEDC","ZBEDG","ZBEDGT"],["REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","INTEGER*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4"],["1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:NTXM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","0:KSM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM","1:LCM"],["0:KBM","1:KBM+1","1:KBM+1","1:KBM","1:KCM","1:KBM","1:KBM",null,"1:KBM+1",null,"1:KBM","1:KBM","1:KBM","1:KBM+1","1:KBM",null,"1:NSNM","1:NSNM","1:KBM","1:KBM","1:KBM","0:KBM",null,null,null,null,"1:KBM+1","1:KBM","1:KBM","1:KBM","1:KCM","1:KBM","1:KBM","1:NSNM","1:KCM",null,"1:KBM","1:KBM","1:KBM","1:KBM","1:KCM","1:KBM+1","0:KSM",null,"1:KBM","1:KBM",null],[null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"1:NSCM","1:NSCM",null,"1:NSNM",null,"1:NSNM",null,null,null,null,"1:NTXM","1:NTXM",null,"1:NSTM",null,null,null,null],["TEMPORARY CONSOLIDATION VARIABLE","LOWER DIAGONAL OF TRIDIAGONAL MATRIX","MAIN DIAGONAL OF TRIDIAGONAL MATRIC","TEMPORARY TOXIC DECAY COEFF WATER COLUMN DIMENSIONLESS","TEMPORARY TOXIC DECAY COEFF BED DIMENSIONLESS","TEMPORARY CONSOLIDATION VARIABLE","TEMPORARY CONSOLIDATION VARIABLE","SHIELDS PARAMETER BASED ON NONCHOHESIVE D50","UPPER DIAGONAL OF TRIDIAGONAL MATRIC","FLAG TO MARK DRY CELLS","DERIVATIVE OF EFFECTIVE STRESS WITH RESPECT TO VOID RATIO (L/T)**2","TRANSFORMED BED LAYER THICKNESS L","DZBTR ONE TIME LEVEL BACK","TEMPORARY VARIALBE IN TRIDIAGONAL EQUATION SOLVER","BED HYDRAULIC CONDUCTIVITY L/T","TOTAL NUMBER OF SEDIMENT CLASSES PLUS 2","NONCOHESIVE SEDIMENT ARMORING EXPOSURE FUNCTION","NONCOHESIVE SEDIMENT ARMORING HIDDING FUNCTION","BED EXCESS PORE PRESSURE (L/T)**2","BED HYDROSTATIC PORE PRESSURE (L/T)**2","BED TOTAL PORE PRESSURE (L/T)**2","TEMPORARY CONSOLIDATION VARIABLE","VOLUMETRIC TOTAL SEDIMENT FLUX AT BED SURFACE L/T","CELL CENTER BED LOAD TRANSPORT RATE L*L/T","VOLUMETRIC WATER FLUX AT BED SURFACE L/T","BED LOAD TRANSPORT MASK","RIGHT HAND SIDE OF TRIDIAGONAL LINEAR SYSTEM","TOTAL SEDIMENT MASS IN BED LAYER M/L*L","D50 0F NONCOHESIVE SEDIMENT L","TEMPORARY COHESIVE SEDIMENT CONCENTRATION BED M/L*L","TEMPORARY COHESIVE SEDIMENT CONCENTRATION WATER COLUMN  M/L*L*L","SPECIFIC GRAVITY OF SEDIMENT MINUS ONE DIMENSIONLESS","TEMPORARY NONCOHESIVE SEDIMENT CONCENTRATION BED M/L*L*L","NONCOHESIVE SEDIMENT FLUX FROM BED DUE TO BED LOAD TRANSPORT  M/L*L*L","TEMPORARY NONCOHESIVE SEDIMENT CONCENTRATION WATER COLUMN  M/L*L*L","SHEAR STRESS AT WATER COLUMN LAYER INTERFACES (L/T)**2","EFFECTIVE STRESS IN SEDIMENT BED (L/T)**2","MAXIMUM EFFECTIVE STRESS IN SEDIMENT BED (L/T)**2","TOTAL STRESS IN SEDIMENT BED (L/T)**2","TEMPORARY TOXIC CONTAMINANT CONCENTRATION IN BED M/L*L","TEMPORARTY TOXIC CONTAMINANT CONCENTRATION IN WATER COLUMN  M/L*L*L ","TEMPORARY VARIABLE","TEMPORARY COHESIVE AND NONCOHESIVE SEDIMENT SETTLING VELO","DECLARED BUT NOT USED","TEMPORARY BED LAYER CELL CENTER VERTICAL COORDINATE L","TEMPROARY BED LAYER CELL INTERFACE (GRID) COORDINATE .","TEMPORARY BED SURFACE COORDINATE L"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>Type<\/th>\n      <th>1d<\/th>\n      <th>2d<\/th>\n      <th>3d<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="sedtox-local-variables" class="section level2">
+<h2><span class="header-section-number">4.2</span> SEDTOX Local Variables</h2>
+<div id="htmlwidget-e940d9ab583d91c68086" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-e940d9ab583d91c68086">{"x":{"filter":"none","data":[["AA11","AA12","AA21","AA22","ASNDFBL","BB11","BB22","BDLDTMP","BDLDTMPA","BDLDTMPB","BDLDTMPP","BEDEX","BETTMP","BOT","CLEFT","CRIGHT","CRNUM","CSHIELDS","CSEDRESS","CSEDSET","CSEDTAUB","CSEDTAUS","CSNDEQC","CSNDSET","CSNDZEQ","CURANG","D50TMP","DELT","DELTI","DETI","DIASED","DIASED3","DSEDGMM","DUM1","DUM3","DUM4","FACBEDL","FACSUSL","FDSTRSE","FHYDCN","FKBT","FKBTP","FLUXFAC","FOURDPI","FSBDLD","FSEDMODE","FSTRSE","GPDIASED","GRADSED","HBEDMIN","HBEDMXT","HBEDTMP","HOLDTOP","ISUD","NSB","NVAL","PROBDEP","QCELLCTR","S2TL","S3TL","SEDAVG","SEDBOLD","SEDBTMP","SEDMDGM","SHEAR","SHIELDS","SIGP","SNDBOLD","SNDBTMP","SNDEQ","SNDEQB","SNDFBLM","STRESS","STTMP","STTMPP","TAUB","TAUB2","TAUBC","TAUE","TIME","TMP1","TMPBOT","TMPBOT1","TMPBOT2","TMPEXP","TMPTOP","TMPTOP1","TMPTOP2","TMPVAL","TMPVALK","TMPVALKP","TMPVALN","TMPVALO","TOP","TOXBOLD","TOXBTMP","UCELLCTR","USTAR","UTMP","VCELLCTR","VOIDCON1","VTMP","WDENGMM3","WDENKGM3","WESE","WESEMX","WSETMP","WSFAC","WVEL","ZEQ","ZEQD","ZEQDI","ZEQI","ZEQMIN"],["Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Func Sub","Func Sub","Func Sub","Func Sub","Func Sub","Func Sub","Func Sub","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Func Sub","Func Sub","Scalar","Scalar","Scalar","Scalar","Func Sub","Func Sub","Func Sub","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar","Scalar"],["REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","INTEGER*4","INTEGER*4","INTEGER*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4","REAL*4"],["TEMPORARY 2X2 LINEAR EQUATION COEFFICIENT","TEMPORARY 2X2 LINEAR EQUATION COEFFICIENT","TEMPORARY 2X2 LINEAR EQUATION COEFFICIENT","TEMPORARY 2X2 LINEAR EQUATION COEFFICIENT","ABSOLUTE VALUE OF NET BED LOAD FLUX FROM BED","TEMPORARY 2X2 LINEAR EQUATION COEFFICIENT","TEMPORARY 2X2 LINEAR EQUATION COEFFICIENT","TEMPORARY BED LOAD TRANSPORT VARIABLE","TEMPORARY BED LOAD TRANSPORT VARIABLE","TEMPORARY BED LOAD TRANSPORT VARIABLE","TEMPORARY BED LOAD TRANSPORT VARIABLE","NOT USED","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","ANTI-DIFFUSION SETTLING COEFFICIENT","CRITICAL SHIELDS COEFFICIENT","COHESIVE SEDIMENT RESUSPENSION FUNCTION","COHESIVE SEDIMENT SETTLING VELOCITY FUNCTION","COHESIVE SEDIMENT CRITICAL STRESS FOR BULK EROSION","COHESIVE SEDIMENT CRITICAL STRESS FOR SURFACE EROSION","NONCOHESIVE SEDIMENT EQUILIBRIUM CONCENTRATION","NONCOHESIVE SEDIMENT SETTLING VELOCITY FUNCTION","NONCOHESIVE SEDIMENT REFERENCE CONCENTRATION LEVEL","CURRENT DIRECTION ANGLE","TEMPORARY VARIABLE","TIME STEP","1/DELT","TEMPORARY VARIABLE","TEMPORARY SEDIMENT DIAMETER","TEMPORARY SEDIMENT DIAMETER","1/(SEDIMENT DENSITY IN GRAMS)","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","FRACTION OF SEDIMENT TRANSPORTED AS BED LOAD","FRACTION OF SEDIMENT TRANSPORTED AS SUSPENDED LOAD","BED EFFECTIVE STRESS FUNCTION","BED HYDRAULIC CONDUCTIVITY FUNCITON","TEMPORARY VARIABLE","TEMPORARY VARIABLE","BED LOAD FLUX LIMITER","4./PI","TEMPORARY BED LOAD TRASPORT COEFFICIENT","BEDLOAD-SUSPENDED LOAD FACTOR FUNCTION","BED EFFECTIVE STRESS RUNCTION","GRAVITY*(SSG-1)*(SEDIMENT DIAMETER)","VERTICAL SEDIMENT CONCENTRATION GRADIENT","MINIMUM BED LAYER THICKNESS","MAXIMUM THICKNESS OF TOP BED LAYER","TEMPORARY BED LAYER THICKNESS","OLD TOP BED LAEYR THICKNESS","UPDATE SWITCH","LOOP INDEX","TEMPORARY VARIABLE","PROBABILITY OF DEPOSITION","HORIZONTAL VELOCITY MAGNITUDE AT CELL CENTER","TIME INTEGRATION LEVEL REAL SWITCH","TIME INTEGRATION LEVEL REAL SWITCH","TEMPORARY AVERGE SEDIMENT CONCENTRATION","TEMPORARY VARIABLE","TEMPORARY VARIABLE","GEOMETRIC MEAN","SHEAR IN VELOCITY PROFILE","SHIELDS PARAMETER","SUM OF PHI SIZES","TEMPORARY VARIABLE","TEMPORARY VARIABLE","EQUILIBRIUM","TEMPORARY VARIABLE","TEMPORARY NONCOHESIVE SEDIMENT BED FLUX","TEMPORARY STRESS IN CONSOLIDATION CALCULATION","TEMPORARY VARIABLE","TEMPORARY VARIABLE","BED SHEAR STRESS","BED SHEAR STRESS SQUARE","CRITICAL BED SHEAR STRESS","EXCESS BED SHEAR STRESS","CURRENT TIME","TEMPORARY VARIALBE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY VARIABLE","TEMPORARY TOXIC CONCENTRATION IN BED","TEMPORARY TOXIC CONCENTRATION IN BED","CELL CENTER U VELOCITY","SHEAR VELOCITY","TEMPORARY VARIABLE","CELL CENTER VELOCITY COMPONENT IN V DIRECTION","TEMPORARY VOID RATIO","TEMPORARY VARIABLE","WATER DENSITY IN GM/M**3","WATER DENSITY IN KG/M**3","TEMPORARY RESUSPENSION RATE","MAXIMUM RESUSPENSION RATE BASED ON AVAILABLE SEDIMENT","TEMPORARY VARIABLE","SETTLING FACTOR","TEMPORARY VARIABLE","SEDIMENT CONCENTRATION REFERENCE LEVEL","ZEQ/(BOTTOM WATER COLUMN LAYER FRACTIONAL THICKNESS","1/ZEQD","1/ZEQ","MINIMUM ZEQ"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th>Name<\/th>\n      <th>scalar_func<\/th>\n      <th>Type<\/th>\n      <th>Description<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="efdc-main-arrays.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

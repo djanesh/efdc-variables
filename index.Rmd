@@ -14,9 +14,19 @@ This document is prepared by Dynamic Solutions International, LLC to support the
 bookdown::render_book("index.Rmd","bookdown::gitbook", output_dir = "docs")
 ```
 
-# Arrays
+# All internal variables
+```{r, echo=FALSE, warning=FALSE}
+allvariables <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "allvariables", col_types = NULL)
+DT::datatable(allvariables, rownames = F)
+```
+
+
+# EFDC Main Arrays
+
 
 ## Combined Arrays
+This section combines one dimensional, two dimensional, three dimensional and 4 dimensional arrays into one searchable data table. By default, only 10 variables are displayed. Use seach button to find the arrays that you are interested to see. 
+
 ```{r, echo=FALSE, warning=FALSE}
 array <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "arrays", col_types = NULL)
 DT::datatable(array, rownames = F)
@@ -50,4 +60,20 @@ DT::datatable(threed, rownames = F)
 fourd <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "4darray")
 DT::datatable(fourd[,-2], style = 'bootstrap', width = 1200, rownames = F)
 #knitr::kable(fourd, format="html", pad=0)
+```
+
+# SEdTOX 
+
+## Arrays in SEDTOX
+
+```{r, echo = FALSE, warning = FALSE}
+sedtoxarray <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "sedtoxarray")
+DT::datatable(sedtoxarray, rownames = F)
+```
+
+## SEDTOX Local Variables
+
+```{r, echo = FALSE, warning = FALSE}
+sedtox_local <- read_excel("data/2017-03-29-arrays-rearranged.xlsx", sheet = "sedtox_local")
+DT::datatable(sedtox_local, rownames = F)
 ```
